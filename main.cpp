@@ -4,11 +4,17 @@
 int main()
 {
     std::cout << "Entrez un nombre : ";
-    unsigned long int num {};
+    Int num {};
     std::cin >> num;
-    std::vector<unsigned long int> divs {decompose(num)};
-    for(std::vector<unsigned long int>::iterator i {divs.begin()}; i != divs.end(); i++)
-        std::cout << *i << "; ";
+    std::vector<Int> divs {factor(num)};
+    std::cout << num << " = ";
+    for(std::vector<Int>::iterator i {divs.begin()}; i != divs.end(); i++)
+    {
+        if ( i == divs.end() - 1)
+            std::cout << *i;
+        else
+            std::cout << *i << " x ";
+    }
     std::cout << std::endl;
     return 0;
 }

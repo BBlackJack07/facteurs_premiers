@@ -4,9 +4,10 @@
 #include <vector>
 #include <cmath>
 
+using Int = unsigned long long int;
 
-bool premier(unsigned long int num);
+bool isFirst(Int num);
 
-std::vector<unsigned long int> decompose(unsigned long int num);
+std::vector<Int> factor(Int num);
 
 #endif //HEADER_PREMIERS
