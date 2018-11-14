@@ -40,7 +40,7 @@ std::vector<unsigned int> crible(unsigned int n)
     std::vector<unsigned int> primeNumbers {};
     for (unsigned int i {2}; i < n; i++)
     {
-        if isFirst(i)
+        if (isFirst(i))
             primeNumbers.push_back(i);
     }
 
