@@ -10,4 +10,6 @@ bool isFirst(Int num);
 
 std::vector<Int> factor(Int num);
 
+std::vector<Int> crible(Int n);
+
 #endif //HEADER_PREMIERS
