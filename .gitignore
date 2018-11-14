@@ -1,4 +1,4 @@
 Makefile
-premiers.out
 crible.cpp
-crible.out
+*.out
+*.o
