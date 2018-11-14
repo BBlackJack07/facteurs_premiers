@@ -1,5 +1,5 @@
 #include <iostream>
-#include "premiers.hpp"
+#include "prime_numbers.hpp"
 
 int main()
 {

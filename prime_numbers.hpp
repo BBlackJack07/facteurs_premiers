@@ -1,15 +1,15 @@
-#ifndef HEADER_PREMIERS
-#define HEADER_PREMIERS
+#ifndef HEADER_PRIME_NUMBERS
+#define HEADER_PRIME_NUMBERS
 
 #include <vector>
 #include <cmath>
 
 using Int = unsigned long long int;
 
-bool isFirst(Int num);
+bool isPrime(Int num);
 
 std::vector<Int> factor(Int num);
 
 std::vector<unsigned int> crible(unsigned int n);
 
-#endif //HEADER_PREMIERS
+#endif //HEADER_PRIME_NUMBERS

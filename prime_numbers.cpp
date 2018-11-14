@@ -1,6 +1,6 @@
-#include "premiers.hpp"
+#include "prime_numbers.hpp"
 
-bool isFirst(Int num)
+bool isPrime(Int num)
 {
     if(num % 2 == 0 && num != 2)
         return false;
@@ -22,7 +22,7 @@ std::vector<Int> factor(Int num)
     std::vector<Int> divs {};
     while (div != ceil(sqrt(num))+1)
     {
-        if(isFirst(div) && n%div == 0)
+        if(isPrime(div) && n%div == 0)
         {
             n = n/div;
             divs.push_back(div);
@@ -30,7 +30,7 @@ std::vector<Int> factor(Int num)
         else
             div++;
     }
-    if(isFirst(n))
+    if(isPrime(n))
         divs.push_back(n);
     return divs;
 }
@@ -40,7 +40,7 @@ std::vector<unsigned int> crible(unsigned int n)
     std::vector<unsigned int> primeNumbers {};
     for (unsigned int i {2}; i < n; i++)
     {
-        if (isFirst(i))
+        if (isPrime(i))
             primeNumbers.push_back(i);
     }
 
