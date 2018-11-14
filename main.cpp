@@ -4,13 +4,13 @@
 int main()
 {
     std::cout << "Entrez un nombre : ";
-    Int num {};
-    std::cin >> num;
-    std::vector<Int> divs {factor(num)};
-    std::cout << num << " = ";
-    for(std::vector<Int>::iterator i {divs.begin()}; i != divs.end(); i++)
+    Int inputNumber {};
+    std::cin >> inputNumber;
+    std::vector<Int> factors {factorise(inputNumber)};
+    std::cout << inputNumber << " = ";
+    for(std::vector<Int>::iterator i {factors.begin()}; i != factors.end(); i++)
     {
-        if ( i == divs.end() - 1)
+        if ( i == factors.end() - 1)
             std::cout << *i;
         else
             std::cout << *i << " x ";

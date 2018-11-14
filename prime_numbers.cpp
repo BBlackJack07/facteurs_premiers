@@ -1,38 +1,38 @@
 #include "prime_numbers.hpp"
 
-bool isPrime(Int num)
+bool isPrime(Int number)
 {
-    if(num % 2 == 0 && num != 2)
+    if(number % 2 == 0 && number != 2)
         return false;
-    if(num == 1)
+    if(number == 1)
         return false;
-    for(Int i {3}; i < ceil(sqrt(num)) + 1; i+=2)
+    for(Int i {3}; i < ceil(sqrt(number)) + 1; i+=2)
     {
-        if(num % i == 0)
+        if(number % i == 0)
             return false;
     }
 
     return true;
 }
 
-std::vector<Int> factor(Int num)
+std::vector<Int> factorise(Int number)
 {
-    Int n {num};
-    Int div {2};
-    std::vector<Int> divs {};
-    while (div != ceil(sqrt(num))+1)
+    Int n {number};
+    Int divisor {2};
+    std::vector<Int> factors {};
+    while (divisor != ceil(sqrt(number))+1)
     {
-        if(isPrime(div) && n%div == 0)
+        if(isPrime(divisor) && n%divisor == 0)
         {
-            n = n/div;
-            divs.push_back(div);
+            n = n/divisor;
+            factors.push_back(divisor);
         }
         else
-            div++;
+            divisor++;
     }
     if(isPrime(n))
-        divs.push_back(n);
-    return divs;
+        factors.push_back(n);
+    return factors;
 }
 
 std::vector<unsigned int> crible(unsigned int n)

@@ -6,9 +6,9 @@
 
 using Int = unsigned long long int;
 
-bool isPrime(Int num);
+bool isPrime(Int number);
 
-std::vector<Int> factor(Int num);
+std::vector<Int> factorise(Int number);
 
 std::vector<unsigned int> crible(unsigned int n);
 
