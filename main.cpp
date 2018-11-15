@@ -7,7 +7,7 @@ int main()
     Int inputNumber {};
     std::cin >> inputNumber;
     std::vector<Int> factors {factorise(inputNumber)};
-    std::cout << inputNumber << " = ";
+    std::cout << std::endl << inputNumber << " = ";
     for(std::vector<Int>::iterator i {factors.begin()}; i != factors.end(); i++)
     {
         if ( i == factors.end() - 1)
