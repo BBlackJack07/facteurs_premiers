@@ -13,3 +13,4 @@ std::vector<Int> factorise(Int number);
 std::vector<unsigned int> crible(unsigned int n);
 
 #endif //HEADER_PRIME_NUMBERS
+
