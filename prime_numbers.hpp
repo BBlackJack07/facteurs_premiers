@@ -1,5 +1,5 @@
 /*
-    This program is called 'Prime Numbers'. It is used to factorise positive integers in prime factors.
+    This program is called 'Prime Numbers'. It can be used to decompose positive integers in prime factors.
     Copyright (C) 2018  BBlackJack07
 
     This program is free software: you can redistribute it and/or modify
