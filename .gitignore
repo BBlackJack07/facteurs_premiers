@@ -1,7 +1,7 @@
 Makefile
-makefile
 crible.cpp
 rsa.cpp
 *.out
 *.exe
 *.o
+factorise
